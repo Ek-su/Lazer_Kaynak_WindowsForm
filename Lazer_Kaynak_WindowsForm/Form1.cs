@@ -1,6 +1,8 @@
 using Lazer_Kaynak_WindowsForm.Models;
 using Npgsql;
+using System.Windows.Forms;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace Lazer_Kaynak_WindowsForm
 {
@@ -113,6 +115,7 @@ namespace Lazer_Kaynak_WindowsForm
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {

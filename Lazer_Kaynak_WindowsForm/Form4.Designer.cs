@@ -38,9 +38,12 @@
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -102,14 +105,16 @@
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(12, 346);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(756, 153);
+            this.listView1.Size = new System.Drawing.Size(826, 176);
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -128,6 +133,10 @@
             // 
             this.columnHeader3.Text = "Tarih";
             this.columnHeader3.Width = 150;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Id";
             // 
             // dateTimePicker1
             // 
@@ -157,12 +166,34 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 305);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(157, 29);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "SİL (CHECKBOX)";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(199, 305);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(94, 29);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "DÜZENLE";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 561);
+            this.ClientSize = new System.Drawing.Size(860, 561);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
@@ -196,5 +227,8 @@
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private Button button2;
+        private Button button3;
+        private Button button4;
+        private ColumnHeader columnHeader4;
     }
 }
